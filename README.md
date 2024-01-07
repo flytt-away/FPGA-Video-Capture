@@ -4,5 +4,6 @@
 * 上位机基于紫光同创 Linux PCIe 驱动进行开发，使用 gtk，ffmpeg，能够接收PCIe、以太网视频，同时能调用YOLO模型识别视频
 * 部分代码使用了小眼睛半导体和正点原子的例程（如IIC,RGMII2GMII等），FPGA、上位机和模型部分由我的队友完成，有问题发issue
 
-  突然发现上位机的代码在台式机里面，所以只传了FPGA设计上来，等我开学回学校再传吧（欢迎来b站一键三连+关注，演示demo:<iframe src="//player.bilibili.com/player.html?aid=702501661&bvid=BV1am4y1H7hp&cid=1240948713&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+  突然发现上位机的代码在台式机里面，所以只传了FPGA设计上来，等我开学回学校再传吧（欢迎来b站一键三连+关注，演示demo:
+<iframe src="//player.bilibili.com/player.html?aid=702501661&bvid=BV1am4y1H7hp&cid=1240948713&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
