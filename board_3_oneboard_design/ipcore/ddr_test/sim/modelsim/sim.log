@@ -1,0 +1,206 @@
+# vsim -gui -do "sim.tcl" 
+# Start time: 18:00:58 on May 26,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ddr_test_top_tb
+# Loading sv_std.std
+# Loading work.ddr_test_top_tb
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.test_ddr
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ddr_test_top_tb_v_unit
+# Loading work.ddr_test_top_tb_v_unit
+# Loading work.test_ddr
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipsxb_rst_sync_v1_1
+# Loading work.ipsxb_rst_sync_v1_1
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.axi_m_arbitration
+# Loading work.axi_m_arbitration
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.AXI_FULL_M
+# Loading work.AXI_FULL_M
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.rw_fifo_ctrl
+# Loading work.rw_fifo_ctrl
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.write_ddr_fifo
+# Loading work.write_ddr_fifo
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipml_fifo_v1_6_write_ddr_fifo
+# Loading work.ipml_fifo_v1_6_write_ddr_fifo
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipml_sdpram_v1_6_write_ddr_fifo
+# Loading work.ipml_sdpram_v1_6_write_ddr_fifo
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipml_fifo_ctrl_v1_3
+# Loading work.ipml_fifo_ctrl_v1_3
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.read_ddr_fifo
+# Loading work.read_ddr_fifo
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipml_fifo_v1_6_read_ddr_fifo
+# Loading work.ipml_fifo_v1_6_read_ddr_fifo
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipml_sdpram_v1_6_read_ddr_fifo
+# Loading work.ipml_sdpram_v1_6_read_ddr_fifo
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.sync_generator
+# Loading work.sync_generator
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.video_zoom
+# Loading work.video_zoom
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.interpolation_ram
+# Loading work.interpolation_ram
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipml_sdpram_v1_6_interpolation_ram
+# Loading work.ipml_sdpram_v1_6_interpolation_ram
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.pll_cfg
+# Loading work.pll_cfg
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_PLL_E3
+# Loading work.GTP_PLL_E3
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ddr_test
+# Loading work.ddr_test
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_CLKBUFG
+# Loading work.GTP_CLKBUFG
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipsxb_ddrphy_pll_v1_0
+# Loading work.ipsxb_ddrphy_pll_v1_0
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_IOCLKBUF
+# Loading work.GTP_IOCLKBUF
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_IOCLKDIV
+# Loading work.GTP_IOCLKDIV
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipsxb_distributed_fifo_v1_0
+# Loading work.ipsxb_distributed_fifo_v1_0
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipsxb_distributed_fifo_v1_0_distributed_fifo_v1_0
+# Loading work.ipsxb_distributed_fifo_v1_0_distributed_fifo_v1_0
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipsxb_distributed_sdpram_v1_0_distributed_fifo_v1_0
+# Loading work.ipsxb_distributed_sdpram_v1_0_distributed_fifo_v1_0
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipsxb_distributed_fifo_ctr_v1_0
+# Loading work.ipsxb_distributed_fifo_ctr_v1_0
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ddr_test_ddrphy_top
+# Loading work.ddr_test_ddrphy_top
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_DLL
+# Loading work.GTP_DLL
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ipsxb_ddrphy_slice_top_v1_4
+# Loading work.ipsxb_ddrphy_slice_top_v1_4
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_OSERDES
+# Loading work.GTP_OSERDES
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_OUTBUFT
+# Loading work.GTP_OUTBUFT
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_OUTBUFTCO
+# Loading work.GTP_OUTBUFTCO
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.sync_gen_tb
+# Loading work.sync_gen_tb
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_GRS
+# Loading work.GTP_GRS
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.ddr3
+# Loading work.ddr3
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_DRM9K
+# Loading work.GTP_DRM9K
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_DRM18K
+# Loading work.GTP_DRM18K
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_DDC_E1
+# Loading work.GTP_DDC_E1
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_IOBUFCO
+# Loading work.GTP_IOBUFCO
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.cmos_8_16bit
+# Loading work.cmos_8_16bit
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_IOBUF
+# Loading work.GTP_IOBUF
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_IODELAY
+# Loading work.GTP_IODELAY
+# Refreshing D:/FPGA/PANGOMICRO/pango_learn/8_4ways_hdmi_ov5640_1920x1080x32bit_video_loop/ipcore/ddr_test/sim/modelsim/work.GTP_ISERDES
+# Loading work.GTP_ISERDES
+# ** Warning: (vsim-3015) ./../../../../source/ddr_test_top.v(627): [PCDPC] - Port size (20) does not match connection size (32) for port 'wr_addr_max'. The port definition is at: ./../../../../source/axi_m_arbitration.v(79).
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/user_axi_m_arbitration File: ./../../../../source/axi_m_arbitration.v
+# ** Warning: (vsim-3017) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Too few port connections. Expected 21, found 20.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/user_video_zoom/user_interpolation_ram0/U_ipml_sdpram_interpolation_ram/ADDR_LOOP[0]/DATA_LOOP[0]/U_GTP_DRM18K File: D:/FPGA/PANGOMICRO/PDS/PDS_2022.1/arch/vendor/pango/verilog/simulation/GTP_DRM18K.v
+# ** Warning: (vsim-3722) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Missing connection for port 'WWCONF'.
+# ** Warning: (vsim-3017) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Too few port connections. Expected 21, found 20.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/user_video_zoom/user_interpolation_ram0/U_ipml_sdpram_interpolation_ram/ADDR_LOOP[0]/DATA_LOOP[1]/U_GTP_DRM18K File: D:/FPGA/PANGOMICRO/PDS/PDS_2022.1/arch/vendor/pango/verilog/simulation/GTP_DRM18K.v
+# ** Warning: (vsim-3722) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Missing connection for port 'WWCONF'.
+# ** Warning: (vsim-3017) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Too few port connections. Expected 21, found 20.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/user_video_zoom/user_interpolation_ram0/U_ipml_sdpram_interpolation_ram/ADDR_LOOP[0]/DATA_LOOP[2]/U_GTP_DRM18K File: D:/FPGA/PANGOMICRO/PDS/PDS_2022.1/arch/vendor/pango/verilog/simulation/GTP_DRM18K.v
+# ** Warning: (vsim-3722) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Missing connection for port 'WWCONF'.
+# ** Warning: (vsim-3017) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Too few port connections. Expected 21, found 20.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/user_video_zoom/user_interpolation_ram0/U_ipml_sdpram_interpolation_ram/ADDR_LOOP[0]/DATA_LOOP[3]/U_GTP_DRM18K File: D:/FPGA/PANGOMICRO/PDS/PDS_2022.1/arch/vendor/pango/verilog/simulation/GTP_DRM18K.v
+# ** Warning: (vsim-3722) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Missing connection for port 'WWCONF'.
+# ** Warning: (vsim-3017) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Too few port connections. Expected 21, found 20.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/user_video_zoom/user_interpolation_ram1/U_ipml_sdpram_interpolation_ram/ADDR_LOOP[0]/DATA_LOOP[0]/U_GTP_DRM18K File: D:/FPGA/PANGOMICRO/PDS/PDS_2022.1/arch/vendor/pango/verilog/simulation/GTP_DRM18K.v
+# ** Warning: (vsim-3722) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Missing connection for port 'WWCONF'.
+# ** Warning: (vsim-3017) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Too few port connections. Expected 21, found 20.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/user_video_zoom/user_interpolation_ram1/U_ipml_sdpram_interpolation_ram/ADDR_LOOP[0]/DATA_LOOP[1]/U_GTP_DRM18K File: D:/FPGA/PANGOMICRO/PDS/PDS_2022.1/arch/vendor/pango/verilog/simulation/GTP_DRM18K.v
+# ** Warning: (vsim-3722) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Missing connection for port 'WWCONF'.
+# ** Warning: (vsim-3017) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Too few port connections. Expected 21, found 20.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/user_video_zoom/user_interpolation_ram1/U_ipml_sdpram_interpolation_ram/ADDR_LOOP[0]/DATA_LOOP[2]/U_GTP_DRM18K File: D:/FPGA/PANGOMICRO/PDS/PDS_2022.1/arch/vendor/pango/verilog/simulation/GTP_DRM18K.v
+# ** Warning: (vsim-3722) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Missing connection for port 'WWCONF'.
+# ** Warning: (vsim-3017) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Too few port connections. Expected 21, found 20.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/user_video_zoom/user_interpolation_ram1/U_ipml_sdpram_interpolation_ram/ADDR_LOOP[0]/DATA_LOOP[3]/U_GTP_DRM18K File: D:/FPGA/PANGOMICRO/PDS/PDS_2022.1/arch/vendor/pango/verilog/simulation/GTP_DRM18K.v
+# ** Warning: (vsim-3722) ./../../../interpolation_ram/rtl/ipml_sdpram_v1_6_interpolation_ram.v(851): [TFMPC] - Missing connection for port 'WWCONF'.
+# ** Warning: (vsim-3015) ./../../../../source/ddr_test_top.v(800): [PCDPC] - Port size (4) does not match connection size (32) for port 'axi_awlen'. The port definition is at: ./../../ddr_test.v(38).
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/I_ipsxb_ddr_top File: ./../../ddr_test.v
+# ** Warning: (vsim-3015) ./../../../../source/ddr_test_top.v(800): [PCDPC] - Port size (4) does not match connection size (32) for port 'axi_arlen'. The port definition is at: ./../../ddr_test.v(51).
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/I_ipsxb_ddr_top File: ./../../ddr_test.v
+# ** Warning: (vsim-3017) ./../../ddr_test.v(308): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/I_ipsxb_ddr_top/u_ipsxb_ddrphy_pll_1 File: ./../../rtl/pll/ipsxb_ddrphy_pll_v1_0.v
+# ** Warning: (vsim-3722) ./../../ddr_test.v(308): [TFMPC] - Missing connection for port 'clkout1'.
+# ** Warning: (vsim-3017) ./../../ddr_test.v(387): [TFMPC] - Too few port connections. Expected 51, found 49.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/I_ipsxb_ddr_top/u_ipsxb_ddrc_top File: nofile
+# ** Warning: (vsim-3722) ./../../ddr_test.v(387): [TFMPC] - Missing connection for port 'ddr_zqcs_req'.
+# ** Warning: (vsim-3722) ./../../ddr_test.v(387): [TFMPC] - Missing connection for port 'ddr_zqcs_ack'.
+# ** Warning: (vsim-3017) ./../../ddr_test.v(462): [TFMPC] - Too few port connections. Expected 57, found 56.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb/u_test_ddr/I_ipsxb_ddr_top/u_ddrphy_top File: ./../../ddr_test_ddrphy_top.v
+# ** Warning: (vsim-3722) ./../../ddr_test.v(462): [TFMPC] - Missing connection for port 'dfi_error'.
+# ** Warning: (vsim-PLI-3003) ./../../example_design/bench/ddr3_tb/ddr_test_top_tb.v(296): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb File: ./../../example_design/bench/ddr3_tb/ddr_test_top_tb.v
+# ** Warning: (vsim-PLI-3003) ./../../example_design/bench/ddr3_tb/ddr_test_top_tb.v(297): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+#    Time: 0 fs  Iteration: 0  Instance: /ddr_test_top_tb File: ./../../example_design/bench/ddr3_tb/ddr_test_top_tb.v
+run
+# ** Error (suppressible): (vsim-12023) ./../../example_design/bench/ddr3_tb/ddr_test_top_tb.v(296): Cannot execute undefined system task/function '$fsdbDumpfile'
+# 
+# ** Error (suppressible): (vsim-12023) ./../../example_design/bench/ddr3_tb/ddr_test_top_tb.v(297): Cannot execute undefined system task/function '$fsdbDumpvars'
+# 
+add wave -position 117  sim:/ddr_test_top_tb/u_test_ddr/w_video_pre_rd_flag
+run
+# ddr_test_top_tb.i_mem[1].mem_core.reset at time 24173750.0 ps WARNING: 200 us is required before RST_N goes inactive.
+# ddr_test_top_tb.i_mem[0].mem_core.reset at time 24173750.0 ps WARNING: 200 us is required before RST_N goes inactive.
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task at time 29241500.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task at time 29241550.0 ps WARNING: 500 us is required after RST_N goes inactive before CKE goes active.
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29561500.0 ps INFO: Load Mode 2
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29561500.0 ps INFO: Load Mode 2 Partial Array Self Refresh = Bank 0-7
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29561500.0 ps INFO: Load Mode 2 CAS Write Latency =           5
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29561500.0 ps INFO: Load Mode 2 Auto Self Refresh = Disabled
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29561500.0 ps INFO: Load Mode 2 Self Refresh Temperature = Normal
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29561500.0 ps INFO: Load Mode 2 Dynamic ODT = Disabled
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29561550.0 ps INFO: Load Mode 2
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29561550.0 ps INFO: Load Mode 2 Partial Array Self Refresh = Bank 0-7
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29561550.0 ps INFO: Load Mode 2 CAS Write Latency =           5
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29561550.0 ps INFO: Load Mode 2 Auto Self Refresh = Disabled
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29561550.0 ps INFO: Load Mode 2 Self Refresh Temperature = Normal
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29561550.0 ps INFO: Load Mode 2 Dynamic ODT = Disabled
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29591500.0 ps INFO: Load Mode 3
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29591500.0 ps INFO: Load Mode 3 MultiPurpose Register Select = Pre-defined pattern
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29591500.0 ps INFO: Load Mode 3 MultiPurpose Register Enable = Disabled
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29591550.0 ps INFO: Load Mode 3
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29591550.0 ps INFO: Load Mode 3 MultiPurpose Register Select = Pre-defined pattern
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29591550.0 ps INFO: Load Mode 3 MultiPurpose Register Enable = Disabled
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29621500.0 ps INFO: Load Mode 1
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29621500.0 ps INFO: Load Mode 1 DLL Enable = Enabled
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29621500.0 ps INFO: Load Mode 1 Output Drive Strength =          40 Ohm
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29621500.0 ps INFO: Load Mode 1 ODT Rtt =          60 Ohm
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29621500.0 ps INFO: Load Mode 1 Additive Latency = CL - 2
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29621500.0 ps INFO: Load Mode 1 Write Levelization = Disabled
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29621500.0 ps INFO: Load Mode 1 TDQS Enable = Disabled
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29621500.0 ps INFO: Load Mode 1 Qoff = Enabled
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29621550.0 ps INFO: Load Mode 1
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29621550.0 ps INFO: Load Mode 1 DLL Enable = Enabled
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29621550.0 ps INFO: Load Mode 1 Output Drive Strength =          40 Ohm
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29621550.0 ps INFO: Load Mode 1 ODT Rtt =          60 Ohm
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29621550.0 ps INFO: Load Mode 1 Additive Latency = CL - 2
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29621550.0 ps INFO: Load Mode 1 Write Levelization = Disabled
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29621550.0 ps INFO: Load Mode 1 TDQS Enable = Disabled
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29621550.0 ps INFO: Load Mode 1 Qoff = Enabled
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29651500.0 ps INFO: Load Mode 0
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29651500.0 ps INFO: Load Mode 0 Burst Length =  8
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29651500.0 ps INFO: Load Mode 0 Burst Order = Sequential
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29651500.0 ps INFO: Load Mode 0 CAS Latency =           6
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29651500.0 ps INFO: Load Mode 0 DLL Reset = Reset DLL
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29651500.0 ps INFO: Load Mode 0 Write Recovery =           6
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29651500.0 ps INFO: Load Mode 0 Power Down Mode = DLL on
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29651550.0 ps INFO: Load Mode 0
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29651550.0 ps INFO: Load Mode 0 Burst Length =  8
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29651550.0 ps INFO: Load Mode 0 Burst Order = Sequential
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29651550.0 ps INFO: Load Mode 0 CAS Latency =           6
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29651550.0 ps INFO: Load Mode 0 DLL Reset = Reset DLL
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29651550.0 ps INFO: Load Mode 0 Write Recovery =           6
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29651550.0 ps INFO: Load Mode 0 Power Down Mode = DLL on
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29701500.0 ps INFO: ZQ        long = 1
+# ddr_test_top_tb.i_mem[0].mem_core.cmd_task: at time 29701500.0 ps INFO: Initialization Sequence is complete
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29701550.0 ps INFO: ZQ        long = 1
+# ddr_test_top_tb.i_mem[1].mem_core.cmd_task: at time 29701550.0 ps INFO: Initialization Sequence is complete
+# End time: 18:04:54 on May 26,2023, Elapsed time: 0:03:56
+# Errors: 2, Warnings: 29

@@ -1,0 +1,88 @@
+# Reading C:/modeltech64_10.4/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do sim.tcl
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# D:/FPGA/PANGOMICRO/PDS/PDS_2022.1/ip/system_ip/ipsxb_hmic_s/ipsxb_hmic_eval/ipsxb_hmic_s/../../../../../arch/vendor/pango/verilog/simulation
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:00:57 on May 26,2023
+# vlog -reportprogress 300 -sv -work work -mfcu -incr -f ../modelsim/sim_file_list.f -y D:/FPGA/PANGOMICRO/PDS/PDS_2022.1/ip/system_ip/ipsxb_hmic_s/ipsxb_hmic_eval/ipsxb_hmic_s/../../../../../arch/vendor/pango/verilog/simulation "+libext+.v" "+incdir+../../example_design/bench/mem/" 
+# -- Compiling module ddr_test_top_tb
+# -- Compiling module sync_gen_tb
+# -- Compiling module ddr3
+# -- Skipping module ddr_test
+# -- Scanning library directory 'D:/FPGA/PANGOMICRO/PDS/PDS_2022.1/ip/system_ip/ipsxb_hmic_s/ipsxb_hmic_eval/ipsxb_hmic_s/../../../../../arch/vendor/pango/verilog/simulation'
+# -- Compiling package ddr_test_top_tb_v_unit
+# -- Compiling module test_ddr
+# -- Compiling module AXI_FULL_M
+# -- Compiling module rw_fifo_ctrl
+# -- Compiling module sync_generator
+# -- Compiling module video_zoom
+# -- Compiling module axi_m_arbitration
+# -- Compiling module cmos_8_16bit
+# -- Compiling module hdmi_ctrl
+# -- Compiling module i2c_com
+# -- Compiling module iic_rx_driver
+# -- Compiling module iic_tx_driver
+# -- Compiling module ms7200_ctrl
+# -- Compiling module ms7210_ctrl
+# -- Compiling module ov5640_power_on_delay
+# -- Compiling module ov5640_reg_config
+# -- Compiling module ddr_test
+# -- Compiling module pll_cfg
+# -- Compiling module write_ddr_fifo
+# -- Compiling module ipml_fifo_v1_6_write_ddr_fifo
+# -- Compiling module ipml_sdpram_v1_6_write_ddr_fifo
+# -- Compiling module ipml_fifo_ctrl_v1_3
+# -- Compiling module read_ddr_fifo
+# -- Compiling module ipml_fifo_v1_6_read_ddr_fifo
+# -- Compiling module ipml_sdpram_v1_6_read_ddr_fifo
+# -- Compiling module ipml_fifo_ctrl_v1_3
+# -- Compiling module interpolation_ram
+# -- Compiling module ipml_sdpram_v1_6_interpolation_ram
+# -- Compiling module ipsxb_rst_sync_v1_1
+# -- Compiling module ipsxb_ddrphy_slice_top_v1_4
+# -- Compiling module ipsxb_ddrphy_pll_v1_0
+# -- Compiling module ipsxb_distributed_fifo_v1_0
+# -- Compiling module ipsxb_distributed_fifo_ctr_v1_0
+# -- Compiling module ipsxb_distributed_fifo_v1_0_distributed_fifo_v1_0
+# -- Compiling module ipsxb_distributed_sdpram_v1_0_distributed_fifo_v1_0
+# -- Compiling module GTP_DLL
+# -- Compiling module GTP_DDC_E1
+# -- Compiling module GTP_OSERDES
+# -- Compiling module GTP_OUTBUFT
+# -- Compiling module GTP_OUTBUFTCO
+# -- Compiling module GTP_GRS
+# -- Compiling module GTP_CLKBUFG
+# -- Compiling module GTP_PLL_E3
+# -- Compiling module GTP_IOCLKBUF
+# -- Compiling module GTP_IOCLKDIV
+# -- Compiling module GTP_IOBUFCO
+# -- Compiling module GTP_IOBUF
+# -- Compiling module GTP_IODELAY
+# -- Compiling module GTP_ISERDES
+# -- Compiling module GTP_DRM18K
+# -- Compiling module ddr_test
+# -- Compiling module ddr_test_ddrphy_top
+# -- Compiling module GTP_DRM9K
+# 
+# Top level modules:
+# 	ddr_test_top_tb
+# End time: 18:00:58 on May 26,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

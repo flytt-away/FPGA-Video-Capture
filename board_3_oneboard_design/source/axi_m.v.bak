@@ -1,0 +1,233 @@
+//接口定义最好和赛灵思/ARM文档保持一致，下面直接拷贝了IP核的模块接口和参数
+	module AXI_FULL_M #
+	(
+		parameter integer CTRL_ADDR_WIDTH	= 28,
+		parameter integer DQ_WIDTH	= 32
+	)
+	(
+
+//		input wire                                    INIT_AXI_TXN    ,
+//		output wire                                   TXN_DONE        ,
+//		output reg                                    ERROR           ,
+		input wire                                    M_AXI_ACLK      ,
+		input wire                                    M_AXI_ARESETN   ,
+		//写地址通道↓
+		output wire [3 : 0]                           M_AXI_AWID      ,
+		output wire [CTRL_ADDR_WIDTH-1 : 0]           M_AXI_AWADDR    ,
+		output wire [3 : 0]                           M_AXI_AWLEN     ,
+		output wire                                   M_AXI_AWUSER    ,
+		output wire                                   M_AXI_AWVALID   ,
+		input wire                                    M_AXI_AWREADY   ,
+		//写数据通道↓
+		output wire [DQ_WIDTH*8-1 : 0]                M_AXI_WDATA     ,
+		output wire [DQ_WIDTH-1 : 0]                  M_AXI_WSTRB     ,
+		input wire                                    M_AXI_WLAST     ,
+		input wire  [3 : 0]                           M_AXI_WUSER     ,
+		input wire                                    M_AXI_WREADY    ,
+		//写响应通道↓
+		//读地址通道↓
+		output wire [3 : 0]                           M_AXI_ARID      ,
+        output wire                                   M_AXI_ARUSER    ,
+		output wire [CTRL_ADDR_WIDTH-1 : 0]           M_AXI_ARADDR    ,
+		output wire [3 : 0]                           M_AXI_ARLEN     ,
+		output wire                                   M_AXI_ARVALID   ,
+		input wire                                    M_AXI_ARREADY   ,
+		//读数据通道↓
+		input wire  [3 : 0]                           M_AXI_RID       ,
+		input wire  [DQ_WIDTH*8-1 : 0]                M_AXI_RDATA     ,
+		input wire                                    M_AXI_RLAST     ,
+		input wire                                    M_AXI_RVALID
+	);
+/************************************************************************/
+
+/*******************************参数***************************************/
+parameter   P_ST_IDLE           =   'd0,
+             P_ST_WRITE_START   =   'd1,
+             P_ST_WRITE_TRANS   =   'd2,
+             P_ST_WRITE_END     =   'd3,
+             P_ST_READ_START    =   'd4,
+             P_ST_READ_TANS     =   'd5,
+             P_ST_READ_END      =   'd6;
+
+/*******************************状态机***************************************/
+reg [7:0]                       r_st_current_write;
+reg [7:0]                       r_st_next_write;
+reg [7:0]                       r_st_current_read;
+reg [7:0]                       r_st_next_read;
+/**********************************************/
+always @(posedge M_AXI_ACLK)begin
+    if(!M_AXI_ARESETN)begin
+        r_write_start <= 0;     
+    end
+    else if (r_st_current_write == P_ST_WRITE_START)begin
+        r_write_start <= 'd1;
+    end
+    else begin
+        r_write_start <= 0;
+    end    
+end
+/**********************************************/
+always @(posedge M_AXI_ACLK)begin
+    if(!M_AXI_ARESETN)begin
+        r_st_current_write <= P_ST_IDLE;     
+    end
+    case(r_st_current_write)
+       P_ST_IDLE         : r_st_current_write <= P_ST_WRITE_START;//0
+       P_ST_WRITE_START  : r_st_current_write <= r_write_start  ? P_ST_WRITE_TRANS : P_ST_WRITE_START;//1
+       P_ST_WRITE_TRANS  : r_st_current_write <= M_AXI_WLAST    ? P_ST_WRITE_END   : P_ST_WRITE_TRANS;//2
+       P_ST_WRITE_END    : r_st_current_write <= (r_st_current_read == P_ST_READ_END) ? P_ST_IDLE : P_ST_WRITE_END;//3
+       default           : r_st_current_write <= P_ST_IDLE;
+    endcase
+end
+/**********************************************/
+always @(posedge M_AXI_ACLK)begin
+    if(!M_AXI_ARESETN)begin
+        r_read_start <= 0;     
+    end
+    else if (r_st_current_read == P_ST_READ_START)begin
+        r_read_start <= 'd1;
+    end
+    else begin
+        r_read_start <= 0;
+    end    
+end
+
+/**********************************************/
+
+always @(posedge M_AXI_ACLK)begin
+    if(!M_AXI_ARESETN)begin
+        r_st_current_read <= P_ST_IDLE;     
+    end
+    case(r_st_current_read)
+       P_ST_IDLE        : r_st_current_read <= (r_st_current_write == P_ST_WRITE_END)? P_ST_READ_START : P_ST_IDLE;
+       P_ST_READ_START  : r_st_current_read <= r_read_start ? P_ST_READ_TANS : P_ST_READ_START;
+       P_ST_READ_TANS   : r_st_current_read <= M_AXI_RLAST  ? P_ST_READ_END  : P_ST_READ_TANS;
+       P_ST_READ_END    : r_st_current_read <= P_ST_IDLE;
+       default          : r_st_current_read <= P_ST_IDLE;
+    endcase
+end
+
+/*******************************寄存器***************************************/
+reg                              r_write_start;//写触发发信号
+reg                              r_read_start;//读触发发信号
+reg [CTRL_ADDR_WIDTH - 1 : 0]    r_m_axi_awaddr;//地址寄存器
+reg                              r_m_axi_awvalid;
+reg [DQ_WIDTH - 1 : 0]           r_m_axi_wdata;
+reg                              r_m_axi_wlast;
+reg                              r_m_axi_wvalid;
+reg [CTRL_ADDR_WIDTH*8 - 1 : 0]  r_m_axi_araddr;
+reg                              r_m_axi_arvalid;
+reg                              r_m_axi_rready;
+reg [7:0]                        r_wburst_cnt;
+reg [DQ_WIDTH*8 - 1 : 0]         r_m_axi_rdata;
+/*******************************网表型***************************************/
+
+/*******************************组合逻辑***************************************/
+//一些常用接口是常量，根据顶层模块直接赋值就好
+//写地址
+assign M_AXI_AWID       =   4'b0;
+assign M_AXI_AWLEN      =   4;
+assign M_AXI_AWUSER     =   1'b0;//上面是不需要控制的直接赋值
+assign M_AXI_AWADDR     =   r_m_axi_awaddr;//下面是需要控制的通过reg赋值(目标地址+从机的基地址)
+assign M_AXI_AWVALID    =   r_m_axi_awvalid;
+//写数据
+assign M_AXI_WDATA      =   r_m_axi_wdata;
+assign M_AXI_WSTRB	    =   {(DQ_WIDTH){1'b1}};//闪光灯信号，数据位宽/4 4位都为1
+
+//写响应
+assign M_AXI_BREADY     =   1'b1;//告诉从机时时刻刻准备好了（？，valid和BRESP都是从机发的
+//读地址
+assign  M_AXI_ARID      =   'd0;//与写地址类似
+assign  M_AXI_ARADDR    =   r_m_axi_araddr;
+assign  M_AXI_ARLEN     =   4;
+assign  M_AXI_ARVALID   =   r_m_axi_arvalid;
+//读数据
+
+/*******************************进程***************************************/
+//一个always块最好控制一个reg
+//写地址通道
+always @(posedge M_AXI_ACLK) begin//写地址有效
+   if(!M_AXI_ARESETN || (M_AXI_AWVALID && M_AXI_AWREADY)) begin//有效信号和准备信号都为1时，有效信号归0
+        r_m_axi_awvalid <= 0;
+    end 
+    else if (r_write_start) begin
+        r_m_axi_awvalid <= 1;        
+    end
+    else begin
+        r_m_axi_awvalid <= r_m_axi_awvalid;//其他状态保持不动
+    end
+end
+
+always @(posedge M_AXI_ACLK) begin//写地址
+    if(!M_AXI_ARESETN) begin
+        r_m_axi_awaddr <= 28'b0;
+    end
+    else if (r_write_start) begin
+        r_m_axi_awaddr <= 28'b0;//开始触发时就要设置地址
+    end
+    else begin
+        r_m_axi_awaddr <= r_m_axi_awaddr;
+    end
+end
+//写数据通道
+always @(posedge M_AXI_ACLK)begin //写数据
+    if(!M_AXI_ARESETN || M_AXI_WLAST)begin//复位，LAST信号时，重新置1
+        r_m_axi_wdata <= 'd0;
+    end
+    else if (M_AXI_WREADY) begin
+        r_m_axi_wdata <= r_m_axi_wdata + 1 ; //有效&&准备 数据自增
+    end
+    else begin
+        r_m_axi_wdata <= r_m_axi_wdata;
+    end
+end
+always @(posedge M_AXI_ACLK)begin//写突发计数
+    if(!M_AXI_ARESETN || M_AXI_WLAST)begin
+        r_wburst_cnt <= 'd0;
+    end
+    else if (M_AXI_WREADY) begin
+        r_wburst_cnt <= r_wburst_cnt + 1 ;
+    end
+    else begin
+        r_wburst_cnt <= r_wburst_cnt;
+    end
+end
+//写响应不写辣
+//读地址
+always @(posedge M_AXI_ACLK) begin//读地址有效
+    if(!M_AXI_ARESETN||(M_AXI_ARREADY && M_AXI_ARVALID))begin
+        r_m_axi_arvalid <= 'd0;//复位、拉高后归零
+    end
+    else if (r_read_start) begin//触发时拉高
+        r_m_axi_arvalid <= 'd1;
+    end
+    else begin
+        r_m_axi_arvalid <= r_m_axi_arvalid;
+    end
+end
+always @(posedge M_AXI_ACLK)begin//读地址
+    if(!M_AXI_ARESETN)begin
+        r_m_axi_araddr <= 'd0;
+    end
+    else if (r_read_start) begin
+        r_m_axi_araddr <= 'd0;
+    end
+    else begin
+        r_m_axi_araddr <= r_m_axi_araddr;
+    end
+end
+//读数据
+always @(posedge M_AXI_ACLK)begin
+    if(!M_AXI_ARESETN)begin
+        r_m_axi_rdata <= 'd0;
+    end
+    else if (M_AXI_RVALID) begin
+        r_m_axi_rdata <= M_AXI_RDATA;
+    end
+    else begin
+        r_m_axi_rdata <= r_m_axi_rdata;
+    end
+end
+
+
+endmodule

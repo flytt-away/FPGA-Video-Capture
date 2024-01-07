@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table id="generate_netlist_runtime" title="Generate Netlist Runtime &amp; Memory" column_number="7">
+        <column_headers>
+            <data>Cpu Time</data>
+            <data>Process Cpu Time</data>
+            <data>Real Time</data>
+            <data>Peak Memory (MB)</data>
+            <data>Operation System</data>
+            <data>CPU</data>
+            <data>RAM(GB)</data>
+        </column_headers>
+        <row>
+            <data>0h:0m:23s</data>
+            <data>0h:0m:23s</data>
+            <data>0h:0m:27s</data>
+            <data>1,186</data>
+            <data>WINDOWS 10 x86_64</data>
+            <data>AMD Ryzen 9 4900HS with Radeon Graphics</data>
+            <data>39</data>
+        </row>
+    </table>
+    <general_container id="generate_netlist_settings">
+        <table_container>
+            <table id="generate_netlist_settings" title="Generate Netlist Settings" column_number="2">
+                <column_headers>
+                    <data>Name</data>
+                    <data>Value</data>
+                </column_headers>
+                <row>
+                    <data>Part</data>
+                    <data>PGL50H-6FBG484</data>
+                </row>
+                <row>
+                    <data>Top Module</data>
+                    <data>test_ddr</data>
+                </row>
+            </table>
+        </table_container>
+        <general_container align="3">
+            <table_container>
+                <data>Simulation Model</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Enable Sdf Annotate</data>
+                        <data></data>
+                    </row>
+                    <row>
+                        <data>Process Corner</data>
+                        <data>slow</data>
+                    </row>
+                </table>
+            </table_container>
+        </general_container>
+    </general_container>
+</tables>

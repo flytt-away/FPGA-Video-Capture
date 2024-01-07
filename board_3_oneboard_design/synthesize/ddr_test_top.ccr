@@ -1,0 +1,62 @@
+##### Written on 2023/03/23 11:12:48 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL50H-6FBG484
+
+Top Module : 
+	ddr_test_top
+
+Constraint File(s) : 
+	D:/FPGA/PANGOMICRO/pango_learn/3_ddr_test/ddr_test.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 4 critical warning(s), 0 warning(s), out of 525 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+
+
+define_attribute {p:mem_dq[14]} {PAP_IO_LOC} {P3}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/pango_learn/3_ddr_test/ddr_test.fdc(line number: 286)] | Port mem_dq[14] has been placed at location P3, whose type is share pin.
+
+define_attribute {p:mem_dq[11]} {PAP_IO_LOC} {M1}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/pango_learn/3_ddr_test/ddr_test.fdc(line number: 307)] | Port mem_dq[11] has been placed at location M1, whose type is share pin.
+
+define_attribute {p:mem_dq[9]} {PAP_IO_LOC} {M2}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/pango_learn/3_ddr_test/ddr_test.fdc(line number: 321)] | Port mem_dq[9] has been placed at location M2, whose type is share pin.
+
+define_attribute {p:rst_board} {PAP_IO_LOC} {K18}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/pango_learn/3_ddr_test/ddr_test.fdc(line number: 543)] | Port rst_board has been placed at location K18, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+
+
+
+
+
+
+
+
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+
+
+
+

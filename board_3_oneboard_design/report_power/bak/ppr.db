@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table id="report_power_power_summary" title="Power Summary" column_number="2">
+        <column_headers>
+            <data>Name</data>
+            <data>Value</data>
+        </column_headers>
+        <comment>
+            <data>Notice:</data>
+            <data>    The result of power analysis is based on the voltage list in [Settings] -&gt; [Power Supply] table.</data>
+            <data>    And no margin for power supply reserved.</data>
+        </comment>
+        <row>
+            <data>Total On Chip Power</data>
+            <data>1.98028</data>
+        </row>
+        <row>
+            <data>Static Power</data>
+            <data>0.434404</data>
+        </row>
+        <row>
+            <data>External Power</data>
+            <data>0</data>
+        </row>
+        <row>
+            <data>Junction Temperature</data>
+            <data>58.0512</data>
+        </row>
+        <row>
+            <data>Thermal Margin</data>
+            <data>41.9488</data>
+        </row>
+        <row>
+            <data>Power Margin</data>
+            <data>2.5119</data>
+        </row>
+    </table>
+    <table id="report_power_logic_device_summary" title="Logic Device Summary" column_number="3">
+        <column_headers>
+            <data>Device</data>
+            <data>Power</data>
+            <data>Percent</data>
+        </column_headers>
+        <row>
+            <data>Clock</data>
+            <data>0.0734365</data>
+            <data>3.70839%</data>
+        </row>
+        <row>
+            <data>CLM</data>
+            <data>0.0618557</data>
+            <data>3.12358%</data>
+        </row>
+        <row>
+            <data>IO</data>
+            <data>0.845143</data>
+            <data>42.678%</data>
+        </row>
+        <row>
+            <data>DRM</data>
+            <data>0.132489</data>
+            <data>6.69039%</data>
+        </row>
+        <row>
+            <data>APM</data>
+            <data>0</data>
+            <data>0%</data>
+        </row>
+        <row>
+            <data>PLL</data>
+            <data>0.0269998</data>
+            <data>1.36343%</data>
+        </row>
+        <row>
+            <data>HSST</data>
+            <data>0.265615</data>
+            <data>13.413%</data>
+        </row>
+        <row>
+            <data>PCIE</data>
+            <data>0.0114979</data>
+            <data>0.580618%</data>
+        </row>
+        <row>
+            <data>Net</data>
+            <data>0.12884</data>
+            <data>6.50613%</data>
+        </row>
+    </table>
+    <table id="report_power_power_rail_summary" title="Power Rail Summary" column_number="5">
+        <column_headers>
+            <data>Power Rail</data>
+            <data>Voltage</data>
+            <data>Current</data>
+            <data>External Current</data>
+            <data>On Chip Power</data>
+        </column_headers>
+        <row>
+            <data>vcc</data>
+            <data>1.2</data>
+            <data>0.661706</data>
+            <data>0</data>
+            <data>0.794048</data>
+        </row>
+        <row>
+            <data>vccio33</data>
+            <data>3.3</data>
+            <data>0.0713564</data>
+            <data>0</data>
+            <data>0.235476</data>
+        </row>
+        <row>
+            <data>vccio25</data>
+            <data>2.5</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+        </row>
+        <row>
+            <data>vccio18</data>
+            <data>1.8</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+        </row>
+        <row>
+            <data>vccio15</data>
+            <data>1.5</data>
+            <data>0.231368</data>
+            <data>0</data>
+            <data>0.347053</data>
+        </row>
+        <row>
+            <data>vccio12</data>
+            <data>1.2</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+        </row>
+        <row>
+            <data>vcc33a</data>
+            <data>3.3</data>
+            <data>0.0935096</data>
+            <data>0</data>
+            <data>0.308582</data>
+        </row>
+        <row>
+            <data>vcca_lane</data>
+            <data>1.2</data>
+            <data>0.191051</data>
+            <data>0</data>
+            <data>0.229262</data>
+        </row>
+        <row>
+            <data>vcca_pll0</data>
+            <data>1.2</data>
+            <data>0.0502613</data>
+            <data>0</data>
+            <data>0.0603135</data>
+        </row>
+        <row>
+            <data>vcca_pll1</data>
+            <data>1.2</data>
+            <data>0.00462287</data>
+            <data>0</data>
+            <data>0.00554744</data>
+        </row>
+    </table>
+    <table id="report_power_runtime" title="Power Runtime &amp; Memory" column_number="7">
+        <column_headers>
+            <data>Cpu Time</data>
+            <data>Process Cpu Time</data>
+            <data>Real Time</data>
+            <data>Peak Memory (MB)</data>
+            <data>Operation System</data>
+            <data>CPU</data>
+            <data>RAM(GB)</data>
+        </column_headers>
+        <row>
+            <data>0h:0m:25s</data>
+            <data>0h:0m:25s</data>
+            <data>0h:0m:27s</data>
+            <data>791</data>
+            <data>WINDOWS 10 x86_64</data>
+            <data>AMD Ryzen 9 4900HS with Radeon Graphics</data>
+            <data>39</data>
+        </row>
+    </table>
+    <table id="report_power_messages" title="Power Messages" column_number="1">
+        <column_headers/>
+        <row>
+            <data message="4">The power model of the device is Production</data>
+        </row>
+    </table>
+    <general_container id="report_power_settings">
+        <table_container>
+            <table id="report_power_settings" title="Power Settings" column_number="2">
+                <column_headers>
+                    <data>Name</data>
+                    <data>Value</data>
+                </column_headers>
+                <row>
+                    <data>Part</data>
+                    <data>PGL50H-6FBG484</data>
+                </row>
+                <row>
+                    <data>Top Module</data>
+                    <data>test_ddr</data>
+                </row>
+            </table>
+        </table_container>
+        <general_container align="3">
+            <table_container>
+                <data>Device</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Temp Grade</data>
+                        <data>Industrial</data>
+                    </row>
+                    <row>
+                        <data>Process</data>
+                        <data>Typical</data>
+                    </row>
+                    <row>
+                        <data>Power Model</data>
+                        <data>Production</data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Environment</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Custom Junction Temperature </data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Ambient Temperature</data>
+                        <data>25</data>
+                    </row>
+                    <row>
+                        <data>Junction Temperature</data>
+                        <data>58.0512</data>
+                    </row>
+                    <row>
+                        <data>Custom Effective Theta JA </data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Effective Theta JA</data>
+                        <data>16.7</data>
+                    </row>
+                    <row>
+                        <data>Airflow (LFM)</data>
+                        <data>Still</data>
+                    </row>
+                    <row>
+                        <data>Heat-Sink</data>
+                        <data>None</data>
+                    </row>
+                    <row>
+                        <data>Effective Theta SA</data>
+                        <data>0</data>
+                    </row>
+                    <row>
+                        <data>Board Thermal Model</data>
+                        <data>Normal</data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Simulation Settings</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Specify Input VCD File</data>
+                        <data></data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Switching</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Output Load (pF)</data>
+                        <data>5</data>
+                    </row>
+                    <row>
+                        <data>Default Clock Freq (MHz)</data>
+                        <data>100</data>
+                    </row>
+                    <row>
+                        <data>Default Toggle Rate</data>
+                        <data>0.125</data>
+                    </row>
+                    <row>
+                        <data>Default Static Probability</data>
+                        <data>0.125</data>
+                    </row>
+                    <row>
+                        <data>Default I/O Toggle Rate</data>
+                        <data>0.125</data>
+                    </row>
+                    <row>
+                        <data>Default I/O Enable Probability</data>
+                        <data>0.5</data>
+                    </row>
+                    <row>
+                        <data>Default BRAM Toggle Rate</data>
+                        <data>0.125</data>
+                    </row>
+                    <row>
+                        <data>Default BRAM Enable Probability</data>
+                        <data>1</data>
+                    </row>
+                    <row>
+                        <data>Default APM Toggle Rate</data>
+                        <data>0.125</data>
+                    </row>
+                    <row>
+                        <data>Default APM Enable Probability</data>
+                        <data>1</data>
+                    </row>
+                    <row>
+                        <data>Default HSST Toggle Rate</data>
+                        <data>0.125</data>
+                    </row>
+                    <row>
+                        <data>Default HSST Enable Probability</data>
+                        <data>0.5</data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Power Supply</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>VCC</data>
+                        <data>1.1</data>
+                    </row>
+                    <row>
+                        <data>VCCIO33</data>
+                        <data>3.3</data>
+                    </row>
+                    <row>
+                        <data>VCCIO25</data>
+                        <data>2.5</data>
+                    </row>
+                    <row>
+                        <data>VCCIO18</data>
+                        <data>1.8</data>
+                    </row>
+                    <row>
+                        <data>VCCIO15</data>
+                        <data>1.5</data>
+                    </row>
+                    <row>
+                        <data>VCCIO12</data>
+                        <data>1.2</data>
+                    </row>
+                    <row>
+                        <data>VCCAUX</data>
+                        <data>3.3</data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Input/Output</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Output power report file</data>
+                        <data></data>
+                    </row>
+                    <row>
+                        <data>Output fast settings file</data>
+                        <data></data>
+                    </row>
+                    <row>
+                        <data>Output PPF file</data>
+                        <data></data>
+                    </row>
+                </table>
+            </table_container>
+        </general_container>
+    </general_container>
+</tables>

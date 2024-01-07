@@ -1,0 +1,1 @@
+def_route -prior_net {I_ipsxb_ddr_top/ddrphy_ioclk_gate} -load {I_ipsxb_ddr_top/u_ipsxb_ddrphy_pll_0/u_pll_e3/goppll:CLKOUT0_SYN; I_ipsxb_ddr_top/u_ipsxb_ddrphy_pll_1/u_pll_e3/goppll:CLKOUT0_SYN; }

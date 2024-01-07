@@ -1,0 +1,206 @@
+##### Written on 2023/08/17 23:25:38 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL50H-6FBG484
+
+Top Module : 
+	test_ddr
+
+Constraint File(s) : 
+	D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 35 critical warning(s), 5 warning(s), out of 1197 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+
+
+define_attribute {p:ref_clk} {PAP_IO_DIRECTION} {INPUT}
+
+	W: ConstraintEditor-4026: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 947)] PAP_IO_DIRECTION is already defined in p:ref_clk, new value INPUT will overwrite the current value.
+
+define_attribute {p:ref_clk} {PAP_IO_LOC} {P20}
+
+	W: ConstraintEditor-4026: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 948)] PAP_IO_LOC is already defined in p:ref_clk, new value P20 will overwrite the current value.
+
+define_attribute {p:ref_clk} {PAP_IO_VCCIO} {3.3}
+
+	W: ConstraintEditor-4026: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 949)] PAP_IO_VCCIO is already defined in p:ref_clk, new value 3.3 will overwrite the current value.
+
+define_attribute {p:ref_clk} {PAP_IO_STANDARD} {LVCMOS33}
+
+	W: ConstraintEditor-4026: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 950)] PAP_IO_STANDARD is already defined in p:ref_clk, new value LVCMOS33 will overwrite the current value.
+
+define_attribute {p:ref_clk} {PAP_IO_NONE} {TRUE}
+
+	W: ConstraintEditor-4026: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 951)] PAP_IO_NONE is already defined in p:ref_clk, new value TRUE will overwrite the current value.
+
+define_attribute {p:mem_dq[14]} {PAP_IO_LOC} {P3}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 304)] | Port mem_dq[14] has been placed at location P3, whose type is share pin.
+
+define_attribute {p:mem_dq[11]} {PAP_IO_LOC} {M1}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 325)] | Port mem_dq[11] has been placed at location M1, whose type is share pin.
+
+define_attribute {p:mem_dq[9]} {PAP_IO_LOC} {M2}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 339)] | Port mem_dq[9] has been placed at location M2, whose type is share pin.
+
+define_attribute {p:rst_board} {PAP_IO_LOC} {K18}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 561)] | Port rst_board has been placed at location K18, whose type is share pin.
+
+define_attribute {p:r_b_out[5]} {PAP_IO_LOC} {R22}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 596)] | Port r_b_out[5] has been placed at location R22, whose type is share pin.
+
+define_attribute {p:r_b_out[4]} {PAP_IO_LOC} {R20}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 603)] | Port r_b_out[4] has been placed at location R20, whose type is share pin.
+
+define_attribute {p:r_b_out[2]} {PAP_IO_LOC} {T21}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 617)] | Port r_b_out[2] has been placed at location T21, whose type is share pin.
+
+define_attribute {p:r_g_out[7]} {PAP_IO_LOC} {L17}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 638)] | Port r_g_out[7] has been placed at location L17, whose type is share pin.
+
+define_attribute {p:r_g_out[6]} {PAP_IO_LOC} {K20}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 645)] | Port r_g_out[6] has been placed at location K20, whose type is share pin.
+
+define_attribute {p:r_g_out[5]} {PAP_IO_LOC} {L19}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 652)] | Port r_g_out[5] has been placed at location L19, whose type is share pin.
+
+define_attribute {p:r_g_out[0]} {PAP_IO_LOC} {M21}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 687)] | Port r_g_out[0] has been placed at location M21, whose type is share pin.
+
+define_attribute {p:r_r_out[7]} {PAP_IO_LOC} {H19}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 694)] | Port r_r_out[7] has been placed at location H19, whose type is share pin.
+
+define_attribute {p:r_r_out[6]} {PAP_IO_LOC} {H22}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 701)] | Port r_r_out[6] has been placed at location H22, whose type is share pin.
+
+define_attribute {p:r_r_out[5]} {PAP_IO_LOC} {H21}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 708)] | Port r_r_out[5] has been placed at location H21, whose type is share pin.
+
+define_attribute {p:r_r_out[0]} {PAP_IO_LOC} {K17}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 743)] | Port r_r_out[0] has been placed at location K17, whose type is share pin.
+
+define_attribute {p:g_in[5]} {PAP_IO_LOC} {AB18}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 800)] | Port g_in[5] has been placed at location AB18, whose type is share pin.
+
+define_attribute {p:g_in[4]} {PAP_IO_LOC} {AA18}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 805)] | Port g_in[4] has been placed at location AA18, whose type is share pin.
+
+define_attribute {p:g_in[3]} {PAP_IO_LOC} {AB19}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 810)] | Port g_in[3] has been placed at location AB19, whose type is share pin.
+
+define_attribute {p:g_in[2]} {PAP_IO_LOC} {W18}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 815)] | Port g_in[2] has been placed at location W18, whose type is share pin.
+
+define_attribute {p:g_in[1]} {PAP_IO_LOC} {V17}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 820)] | Port g_in[1] has been placed at location V17, whose type is share pin.
+
+define_attribute {p:iic_sda} {PAP_IO_LOC} {V20}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 870)] | Port iic_sda has been placed at location V20, whose type is share pin.
+
+define_attribute {p:iic_scl} {PAP_IO_LOC} {V19}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 898)] | Port iic_scl has been placed at location V19, whose type is share pin.
+
+define_attribute {p:pix_clk_out} {PAP_IO_LOC} {M22}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 912)] | Port pix_clk_out has been placed at location M22, whose type is share pin.
+
+define_attribute {p:pix_clk_in} {PAP_IO_LOC} {AA12}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 943)] | Port pix_clk_in has been placed at location AA12, whose type is share pin.
+
+define_attribute {p:cmos1_data[7]} {PAP_IO_LOC} {AB13}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 1023)] | Port cmos1_data[7] has been placed at location AB13, whose type is share pin.
+
+define_attribute {p:cmos1_sda} {PAP_IO_LOC} {Y13}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 1110)] | Port cmos1_sda has been placed at location Y13, whose type is share pin.
+
+define_attribute {p:cmos2_href} {PAP_IO_LOC} {AB5}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 1160)] | Port cmos2_href has been placed at location AB5, whose type is share pin.
+
+define_attribute {p:cmos2_vsync} {PAP_IO_LOC} {Y5}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 1170)] | Port cmos2_vsync has been placed at location Y5, whose type is share pin.
+
+define_attribute {p:pcie_perst_n} {PAP_IO_LOC} {A19}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 1194)] | Port pcie_perst_n has been placed at location A19, whose type is share pin.
+
+define_attribute {p:eth_rst_n_0} {PAP_IO_LOC} {F19}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 1283)] | Port eth_rst_n_0 has been placed at location F19, whose type is share pin.
+
+define_attribute {p:eth_rgmii_rxd_0[3]} {PAP_IO_LOC} {F18}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 1316)] | Port eth_rgmii_rxd_0[3] has been placed at location F18, whose type is share pin.
+
+define_attribute {p:eth_rgmii_tx_ctl_0} {PAP_IO_LOC} {F22}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 1322)] | Port eth_rgmii_tx_ctl_0 has been placed at location F22, whose type is share pin.
+
+define_attribute {p:eth_rgmii_txd_0[1]} {PAP_IO_LOC} {E20}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 1343)] | Port eth_rgmii_txd_0[1] has been placed at location E20, whose type is share pin.
+
+define_attribute {p:eth_rgmii_txd_0[2]} {PAP_IO_LOC} {E22}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 1350)] | Port eth_rgmii_txd_0[2] has been placed at location E22, whose type is share pin.
+
+define_attribute {p:eth_rgmii_txd_0[3]} {PAP_IO_LOC} {F21}
+
+	C: ConstraintEditor-2002: [D:/FPGA/PANGOMICRO/done/board_3_oneboard_design/ddr_test.fdc(line number: 1357)] | Port eth_rgmii_txd_0[3] has been placed at location F21, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+
+
+
+
+
+
+
+
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+
+
+
+
